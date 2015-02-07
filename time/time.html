@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>time</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin:0;
+            padding:0;
+        }
+        button {
+
+        }
+        div {
+            width:300px;
+            height:300px;
+            border:1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<label for="text">Введите количество секунд:</label>
+<br>
+<input type="text" id="text">
+<br>
+<button class="submit">Расчитать</button>
+<div class="result"></div>
+<script>
+    var body = document.body;
+    var text = document.getElementById('text');
+    var button = document.getElementsByClassName('submit')[0];
+    var result = document.getElementsByClassName('result')[0];
+    button.addEventListener('click',function(){
+       // alert('test');
+       var hour, min, sec;
+      hour = Math.floor(text.value/3600);
+      sec = text.value -(hour*3600);
+      min = Math.floor(sec/60);
+      sec = sec -(min*60);
+      alert('hour = '+hour);
+      alert('min = '+min);
+      alert('sec = '+sec);
+    },false);
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/*Для всех элементов тега боди задаю шрифт*/
+body {
+    font-family:"Comic Sans MS";
+}
+table {
+    color:#000080;
+    border: 2px solid #008000; /*Ширина границы 2px, тип подчеркивания сплошная линия,
+    цвет -#008000 (зеленый) */
+}
+
+/*Граница шириной 1px тип границы сплошная и цвет границы зеленая*/
+table td, table th{
+    border: 1px solid #008000;
+}
+
+.menu { /*Задаю цвет фона для фрейма меню*/
+    background: #FFF3FF;
+}
+.menu ul { /*Тип маркерованного списка*/
+    list-style-type: circle;
+}
+.menu ul li a { /*Цвет ссылок*/
+    color:#008000;
+}
+.menu ul li a:hover{ /*Задаю цвет ссылкам в момент наведения*/
+    color:#35FF23;
+}
+.menu ul li a:visited{ /*Задаю цвет для посещенных ссылок*/
+    color:#008000;
+}
+
+/*Задаю цвет в качестве фона картинку, по умолчанию картинка повторяется
+по оси x и y
+Т.к. картинка не несет смысловую нагрузку, делаю её фоном
+*/
+.logo {
+    background-image: url('../photo/fon_logo_2.png');
+    background-repeat: repeat-x; /*Задаю повторение по оси X*/
+    text-align: center;
+}
+
+.logo h1{
+    background: #CCFFFF; /*Задаю цвет фона для заголовка*/
+    color:#000080; /*Цвет заголовка*/
+    border:3px dashed #003300; /*Ширина границы заголовка, тип подчеркивания пунктир, цвет -зеленый*/
+    width:300px; /*Ширина заголовка*/
+    margin: 0 auto; /*выравнивание по центру*/
+}
+.price {
+    margin:0; /*Делаю отступы 0px*/
+    padding:0; /*Отступы 0px*/
+    }
+.price table {
+    margin:0 auto; /*Выравнивание таблицы по центру*/
+    margin-top: 20px;/*Отступ сверху 20px*/
+}
+.price table caption { /*Стили для заголовка таблицы*/
+   margin-bottom: 20px; /*Отступ от таблицы снизу*/
+   font-size: 18px; /*РАзмер шрифта*/
+   font-weight: bold; /*Ширина - жирный шрифт*/
+   color:#993300; /*Цвет*/
+}
+
+/*Для баннера*/
+.banner{
+    background: #CCFFCC;
+    text-align: center; /*Выравнивание текста по центру*/
+}
+.banner .textBanner_one {
+    color:#003300;
+}
+.banner .textBanner_two{
+    color:#003366;
+}
+.banner .textBanner_three{
+    color:#008000;
+}
+.banner .textBanner_four{
+    color:#993300;
+    font-weight: bold; /*Жирный шрифт*/
+}
